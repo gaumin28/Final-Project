@@ -21,15 +21,20 @@
                 <!-- Login -->
                 <div class="flex flex-col gap-4">
                     <h1 class="text-white self-center">Login To Continue</h1>
-                    <input class="bg-[#612c4f] text-white w-[350px] h-[42px] rounded-[20px] pl-4 mx-auto" type="email"
-                        placeholder="E-mail">
-                    <input class="bg-[#612c4f] text-white w-[350px] h-[42px] rounded-[20px] pl-4 mx-auto"
-                        type="password" placeholder="Password">
-                    <div class="flex justify-around">
-                        <a class="text-white" href="./ForgotPassword.html">Forgot password <span
-                                class="text-2xl">></span></a>
-                        <a class="text-white bg-pink-500 rounded-md px-8 py-1" href="#">Login</a>
-                    </div>
+                    <form class="flex flex-col gap-4" id="loginForm">
+                        <input class="bg-[#612c4f] text-white w-[350px] h-[42px] rounded-[20px] pl-4 mx-auto"
+                            type="email" placeholder="E-mail" id="emailLogin">
+                        <input class="bg-[#612c4f] text-white w-[350px] h-[42px] rounded-[20px] pl-4 mx-auto"
+                            type="password" placeholder="Password" id="passLogin">
+                        <div class="flex justify-around">
+                            <a class="text-white" href="./ForgotPassword.html">Forgot password <span
+                                    class="text-2xl">></span></a>
+                            <button class="text-white bg-pink-500 rounded-md px-8 py-1 cursor-pointer"
+                                type="submit">Login</button>
+                            <!-- <a class="text-white bg-pink-500 rounded-md px-8 py-1" href="#">Login</a> -->
+                        </div>
+                    </form>
+
                 </div>
                 <!-- Login Method -->
                 <div class="flex justify-around">
@@ -63,6 +68,7 @@
         </div>
 
     </div>
+    <script src="./main.js"></script>
 </body>
 
 </html>

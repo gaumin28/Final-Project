@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Use Tailwind CDN for responsive utilities -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Menu</title>
 </head>
@@ -22,7 +21,7 @@
                     Melodies
                 </h1>
             </div>
-            <div class="flex gap-2">
+            <div class="flex gap-2 auth-area">
                 <a class="px-3 py-1 bg-black rounded-full text-pink-400 font-bold" href="./Login.html">Login</a>
                 <a class="px-3 py-1 bg-pink-500 rounded-full text-black font-bold" href="./SignUp.html">Sign Up</a>
             </div>
@@ -110,7 +109,7 @@
                     </ul>
                 </div>
 
-                <div class="hidden md:flex gap-4">
+                <div class="hidden md:flex gap-4 auth-area">
                     <a href="./Login.html"
                         class="bg-black hover:bg-pink-600 hover:text-black px-5 py-2 rounded-full text-pink-400 font-bold min-w-[120px] text-center">Login</a>
                     <a href="./SignUp.html"
@@ -488,7 +487,7 @@
                             </p>
                         </div>
 
-                        <div class="flex gap-4 self-start md:self-center">
+                        <div class="flex gap-4 self-start md:self-center auth-area">
                             <a href="./SignUp.html"
                                 class="border border-white text-black bg-pink-500 hover:bg-black hover:text-pink-400 rounded-full font-bold min-w-[120px] h-[40px] px-5 py-2 text-center">
                                 Sign Up
@@ -566,7 +565,7 @@
     </div>
 
     <script>
-        // small interactivity: toggle sidebar on mobile
+
         const toggleBtn = document.getElementById('toggleSidebar');
         const sidebar = document.getElementById('sidebar');
         toggleBtn?.addEventListener('click', () => {
@@ -575,9 +574,8 @@
             sidebar.classList.toggle('flex');
         });
 
-        // set footer year
-        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
